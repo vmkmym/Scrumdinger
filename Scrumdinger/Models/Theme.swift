@@ -37,4 +37,9 @@ enum Theme: String {
     var mainColor: Color {
             Color(rawValue)
         }
+    
+    // 소문자로 정의된 enum case를 대문자로 표시
+    var name: String {
+        rawValue.capitalized
+    }
 }
