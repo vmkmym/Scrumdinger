@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Theme: String {
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -41,5 +41,9 @@ enum Theme: String {
     // 소문자로 정의된 enum case를 대문자로 표시
     var name: String {
         rawValue.capitalized
+    }
+    
+    var id: String {
+        name
     }
 }
