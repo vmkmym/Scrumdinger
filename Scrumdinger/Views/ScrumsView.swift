@@ -9,12 +9,13 @@ import SwiftUI
 
 
 struct ScrumsView: View {
-    let scrums: [DailyScrum]
+    @Binding var scrums: [DailyScrum]
     
     var body: some View {
         NavigationStack {
-            List(scrums) { scrum in
-                NavigationLink(destination: DetailView(scrum: scrum)) {
+            // loop's closure의 각각의 iteration에 binding을 전달
+            List($scrums) { $scrum in
+                NavigationLink(destination: DetailView(scrum: $scrum)) {
                     CardView(scrum: scrum)
                 }
                 .listRowBackground(scrum.theme.mainColor)
@@ -33,6 +34,7 @@ struct ScrumsView: View {
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(scrums: DailyScrum.sampleData)
+        // 상수 바인딩을 ScrumsView initializer에게 전달해준다
+        ScrumsView(scrums: .constant(DailyScrum.sampleData))
     }
 }
