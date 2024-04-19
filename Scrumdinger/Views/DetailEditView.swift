@@ -8,9 +8,8 @@
 import SwiftUI
 // @State 속성을 정의한 뷰 내에서만 액세스하도록 속성을 private으로 선언
 
-
 struct DetailEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -27,6 +26,7 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $scrum.theme)
             }
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
@@ -58,6 +58,7 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        // 데이터 바인딩이 필요해서 scrum이 compiler error 발생함
+        DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
     }
 }
