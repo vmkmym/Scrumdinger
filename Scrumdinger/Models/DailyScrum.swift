@@ -26,6 +26,7 @@ struct DailyScrum: Identifiable {
         }
     }
     var theme: Theme
+    var history: [History] = []
     
     // 기본값을 할당하는 초기화 프로그램 추가 -> 매개변수의 기본값을 정의하면 초기화 프로그램이나 함수를 호출할 때 해당 매개변수를 생략할 수 있음
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
