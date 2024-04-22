@@ -36,7 +36,7 @@ enum Theme: String, CaseIterable, Identifiable {
     // mainColor라는 Color 속성은 열거형의 rawValue를 사용하여 컬러를 생성한다.
     var mainColor: Color {
             Color(rawValue)
-        }
+    }
     
     // 소문자로 정의된 enum case를 대문자로 표시
     var name: String {

@@ -62,14 +62,14 @@
 		444586A52BCC0F63000F49BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				444106B82BCAC9F000555F7C /* CardView.swift */,
+				445358132BCD139C00BF13B7 /* DetailEditView.swift */,
+				444586A82BCC1081000F49BF /* DetailView.swift */,
 				44D8A2582BC9548E00FA0851 /* MeetingView.swift */,
 				444106BC2BCAD77D00555F7C /* ScrumsView.swift */,
-				444106B82BCAC9F000555F7C /* CardView.swift */,
-				444106BA2BCACF7F00555F7C /* TrailingIconLabelStyle.swift */,
-				444586A82BCC1081000F49BF /* DetailView.swift */,
-				445358132BCD139C00BF13B7 /* DetailEditView.swift */,
-				44D81F712BD23A9600401515 /* ThemeView.swift */,
 				44D81F732BD23D8100401515 /* ThemePicker.swift */,
+				44D81F712BD23A9600401515 /* ThemeView.swift */,
+				444106BA2BCACF7F00555F7C /* TrailingIconLabelStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
