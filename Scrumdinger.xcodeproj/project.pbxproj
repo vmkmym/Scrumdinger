@@ -27,6 +27,7 @@
 		44E9273C2BD6AEE90022B2C8 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9273B2BD6AEE90022B2C8 /* AVPlayer.swift */; };
 		44E9273E2BD6BA020022B2C8 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9273D2BD6BA020022B2C8 /* NewScrumSheet.swift */; };
 		44E927402BD6C2DD0022B2C8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9273F2BD6C2DD0022B2C8 /* History.swift */; };
+		44EEF70A2BD8D761000D2419 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EEF7092BD8D761000D2419 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		44E9273B2BD6AEE90022B2C8 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		44E9273D2BD6BA020022B2C8 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		44E9273F2BD6C2DD0022B2C8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		44EEF7092BD8D761000D2419 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				44E927352BD697F00022B2C8 /* ScrumTimer.swift */,
 				44E9273B2BD6AEE90022B2C8 /* AVPlayer.swift */,
 				44E9273F2BD6C2DD0022B2C8 /* History.swift */,
+				44EEF7092BD8D761000D2419 /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				444586A92BCC1081000F49BF /* DetailView.swift in Sources */,
 				44E927382BD6A1880022B2C8 /* MeetingFooterView.swift in Sources */,
 				44E927342BD689BC0022B2C8 /* MeetingHeaderView.swift in Sources */,
+				44EEF70A2BD8D761000D2419 /* ScrumStore.swift in Sources */,
 				445358142BCD139C00BF13B7 /* DetailEditView.swift in Sources */,
 				444106BB2BCACF7F00555F7C /* TrailingIconLabelStyle.swift in Sources */,
 				444106B52BCAC54A00555F7C /* Theme.swift in Sources */,
