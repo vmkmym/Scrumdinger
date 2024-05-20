@@ -102,10 +102,10 @@
 				44E9273D2BD6BA020022B2C8 /* NewScrumSheet.swift */,
 				44E927392BD6AC2C0022B2C8 /* ScrumProgressViewStyle.swift */,
 				444106BC2BCAD77D00555F7C /* ScrumsView.swift */,
+				448E8C442BFBA466005F976B /* SpeakerArc.swift */,
 				44D81F732BD23D8100401515 /* ThemePicker.swift */,
 				44D81F712BD23A9600401515 /* ThemeView.swift */,
 				444106BA2BCACF7F00555F7C /* TrailingIconLabelStyle.swift */,
-				448E8C442BFBA466005F976B /* SpeakerArc.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
