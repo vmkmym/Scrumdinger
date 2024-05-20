@@ -11,15 +11,16 @@ import SwiftUI
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
     @State private var errorWrapper: ErrorWrapper?
-    
+
     var body: some Scene {
         WindowGroup {
             ScrumsView(scrums: $store.scrums) {
                 Task {
                     do {
-                        try await store.save(scrums: store.scurms)
+                        try await store.save(scrums: store.scrums)
                     } catch {
-                        errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
+                        errorWrapper = ErrorWrapper(error: error,
+                                                    guidance: "Try again later.")
                     }
                 }
             }

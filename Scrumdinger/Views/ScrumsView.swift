@@ -37,14 +37,17 @@ struct ScrumsView: View {
         }
         .onChange(of: scenePhase) { phase in
             if phase == .inactive { saveAction()
+            }
         }
     }
-}
-
-
-struct ScrumsView_Previews: PreviewProvider {
-    static var previews: some View {
-        // 상수 바인딩을 ScrumsView initializer에게 전달해준다
-        ScrumsView(scrums: .constant(DailyScrum.sampleData))
+    
+    
+    struct ScrumsView_Previews: PreviewProvider {
+        static var previews: some View {
+            // 상수 바인딩을 ScrumsView initializer에게 전달해준다
+            ScrumsView(scrums: .constant(DailyScrum.sampleData)) {
+                
+            }
+        }
     }
 }

@@ -30,7 +30,7 @@ struct ErrorView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Dismiss") {
-                        dismiss ()
+                        dismiss()
                     }
                 }
             }
@@ -44,11 +44,8 @@ struct ErrorView_Previews: PreviewProvider {
     }
     
     static var wrapper: ErrorWrapper {
-        ErrorWrapper(error: SampleError.errorRequired, guidance: "You can safely ignore this error.")
-    }
-    
-    static var previews: some View {
-        ErrorView()
+        ErrorWrapper(error: SampleError.errorRequired,
+                     guidance: "You can safely ignore this error.")
     }
     
     static var previews: some View {
