@@ -79,14 +79,14 @@
 		444106B32BCAC52B00555F7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				444106B42BCAC54A00555F7C /* Theme.swift */,
-				444106B62BCAC81C00555F7C /* DailyScrum.swift */,
-				44E927352BD697F00022B2C8 /* ScrumTimer.swift */,
 				44E9273B2BD6AEE90022B2C8 /* AVPlayer.swift */,
+				444106B62BCAC81C00555F7C /* DailyScrum.swift */,
+				44B796032BE92BD4005947D0 /* ErrorWrapper.swift */,
 				44E9273F2BD6C2DD0022B2C8 /* History.swift */,
 				44EEF7092BD8D761000D2419 /* ScrumStore.swift */,
-				44B796032BE92BD4005947D0 /* ErrorWrapper.swift */,
+				44E927352BD697F00022B2C8 /* ScrumTimer.swift */,
 				44C283082BFE3DBA00F5AAB0 /* SpeechRecognizer.swift */,
+				444106B42BCAC54A00555F7C /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

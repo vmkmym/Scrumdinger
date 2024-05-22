@@ -10,7 +10,7 @@ import AVFoundation
 import Speech
 import SwiftUI
 
-/// A helper for transcribing speech to text using SFSpeechRecognizer and AVAudioEngine.
+/// SFSpeechRecognizer와 AVAudioEngine을 사용하여 음성을 텍스트로 변환하는 도우미입니다.
 actor SpeechRecognizer: ObservableObject {
     enum RecognizerError: Error {
         case nilRecognizer
@@ -36,8 +36,8 @@ actor SpeechRecognizer: ObservableObject {
     private let recognizer: SFSpeechRecognizer?
     
     /**
-     Initializes a new speech recognizer. If this is the first time you've used the class, it
-     requests access to the speech recognizer and the microphone.
+     새로운 음성 인식기를 초기화합니다.
+     이 클래스를 처음 사용할 때, 음성 인식기와 마이크에 대한 접근 권한을 요청합니다.
      */
     init() {
         recognizer = SFSpeechRecognizer()
@@ -79,10 +79,12 @@ actor SpeechRecognizer: ObservableObject {
     }
     
     /**
-     Begin transcribing audio.
+     음성 인식을 시작한다.
      
-     Creates a `SFSpeechRecognitionTask` that transcribes speech to text until you call `stopTranscribing()`.
-     The resulting transcription is continuously written to the published `transcript` property.
+     `stopTranscribing()`을 호출할 때까지 
+     음성을 텍스트로 변환하는 `SFSpeechRecognitionTask`를 생성합니다.
+     
+     변환된 텍스트는 지속적으로 게시된 `transcript` 속성에 기록됩니다.
      */
     private func transcribe() {
         guard let recognizer, recognizer.isAvailable else {
